@@ -178,3 +178,39 @@ void main()
 
     } while (choice != 5);
 }
+
+
+/*
+                                                            Algorithm
+                                                          ______________
+
+Start
+Declare a structure Employee with members emp_id, emp_name, total_salary and next pointer
+Declare a global pointer variable head of Employee type and initialize it to NULL
+Declare functions insert_employee_details(), display_employee_details(), display_highest_and_lowest_salary() and identify_employee_with_salary()
+In insert_employee_details() function:
+a. Allocate memory for a new employee using malloc()
+b. Take employee details (emp_id, emp_name, total_salary) as input from user
+c. Set next pointer of new_employee to NULL
+d. If head is NULL, set head to new_employee
+e. Else, traverse the list till the end and set the next pointer of last node to new_employee
+In display_employee_details() function:
+a. Display employee details in tabular format
+In display_highest_and_lowest_salary() function:
+a. Traverse the list and keep track of highest and lowest salary employees
+b. Display details of highest and lowest salary employees in tabular format
+In identify_employee_with_salary() function:
+a. Traverse the list and identify employees with salary Rs.10000/
+b. Display details of employees with salary Rs.10000/ in tabular format
+In main() function:
+a. Display menu options
+b. Take choice as input from user
+c. If choice is 1, call insert_employee_details() function
+d. If choice is 2, call display_employee_details() function
+e. If choice is 3, call display_highest_and_lowest_salary() function
+f. If choice is 4, call identify_employee_with_salary() function
+g. If choice is 5, exit the program
+h. If choice is invalid, display error message
+End
+
+*/
